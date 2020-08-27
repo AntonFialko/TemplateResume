@@ -81,4 +81,16 @@ $(function() {
     $(".modal__dialog").on("click", function(event) {
         event.stopPropagation();
     });
+
+    //Burger
+
+    const navToggle = $("#navToggle");
+    const nav = $("#nav");
+
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+    });
+
 });
